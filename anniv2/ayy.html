@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Anniversary</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background: linear-gradient(45deg, #040ab3, #ff7eb3);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        h1 {
+            color: rgb(160, 19, 160);
+            font-size: 28px;
+            animation: fadeIn 5s ease-in-out;
+        }
+        i {
+            color: rgb(160, 19, 160);
+        }
+        p {
+            color:rgb(160, 19, 160);
+            font-size: 20px;
+            animation: slideUp 8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .gif-container {
+            margin-top: 20px;
+        }
+        .gif-container img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 30px;
+        }
+        /* STYLE TOMBOL PLAY & PAUSE */
+        .music-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .btn-music {
+            background: white;
+            color: #ff4081;
+            border: none;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .btn-music:hover {
+            background: #ff4081;
+            color: white;
+            transform: scale(1.1);
+        }
+        .btn-music:active {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Haii sayaanggg!!!<br>Selamat Anniversary Yang Ke-8! ❤️</h1>
+        <div class="music-controls">
+        <button class="btn-music" onclick="playMusic()">▶ Play</button>
+        <button class="btn-music" onclick="pauseMusic()">⏸ Pause</button>
+        </div>
+        <div class="gif-container">
+            <img src="https://gifdb.com/images/high/sweet-love-cats-i-miss-you-aa262pr8n6km05x9.gif" alt="Cute Teddy Bear GIF">
+        </div>
+        <p>Ga kerasa udah mau 8 tahun aja hihi <br>Setiap momen bersama kamu adalah hal terindah dalam hidupku. Terima kasih telah memberikan cinta<i>(dan ketek hihi)</i> dan perhatian buat akuuu. Aku bersyukur kamu hadir dalam hidupku. Kita akan jalan bersama dan semoga rasa sayang kita abadi dan akan selalu teruuss bertambah, Aamiin. Love you ayang kecillll! 💖</p>
+        <audio id="bgMusic" loop>
+            <source src="lagu.mp3" type="audio/mpeg">
+        </audio>
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/71/43/05/714305bab62625a16fd2a17340ad06f3.gif" alt="Cute Teddy Bear GIF">
+        </div>
+        <p>
+            Ayanggg, heh ayaanggg!!!😡🤬 <br>Semoga di
+bulan ini rejeki kita berdua makin lancar, karir aku maupun kamu makin naik, menjadi pribadi yang lebih baik dan lebih menjauhi segala larangan- larangan-Nya(hihihi), Dan semoga apapun yang udah kita usahain dan rencanain akan terkabul dan tercapai sedikit demi sedikit, Aamiin <br>Semakin cantik ayangkuuuuuuuu😘😘😘</p>
+        <div class="gif-container">
+            <img src="https://media.tenor.com/9Y-eDAjvU1sAAAAj/love-you.gif" alt="Cute Teddy Bear GIF">
+        </div>
+        <p>
+            Doa dulu ah, biar cepet nikah<br>Allahumma inni a'udzubika minal hammi wal hazani <br>Wa a'udzubika minal 'ajzi wal kasali <br>Wa a'udzubika minal jubni wal bukhli <br>wa a'udzubika min gholabati daini wa qohrirrijaal, Aamiin.<br>Pasti kamu ga apal huuuu <br>Love You cintakuuu!!!🥰🥰🥰
+        </p>
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/1e/9e/dd/1e9edd3d82d21fece033ec625dfb64a2.gif" alt="Cute Teddy Bear GIF">
+        </div>
+        <p>Semogaaaaa kamuuuu ga sukaaaa ninggalin aku tidur lagiiiiii, semogaaaa kamuuuu makin bau keteknyaaaaa, semogaaa kamu lupain masa lalu kamu(scroll terossss sampe lupa punya pacar huuu), semoga kita selalu diberi kesehatan, aamiin, love you sebanyak-banyaknyaaaaaaaaaa</p>
+        <div class="gif-container">
+            <img src="https://media.tenor.com/QUYm4RkRi0cAAAAj/sayang-banget.gif" alt="Cute Teddy Bear GIF">
+        </div>
+        <div class="gif-container">
+            <img src="https://media.tenor.com/VpWG5QhI6rwAAAAM/hi-bosten.gif" alt="Cute Teddy Bear GIF">
+        </div>
+    </div>
+    
+    <script>
+        var audio = document.getElementById("bgMusic");
+
+function playMusic() {
+    audio.play();
+}
+
+function pauseMusic() {
+    audio.pause();
+}
+    </script>
+</body>
+</html>
